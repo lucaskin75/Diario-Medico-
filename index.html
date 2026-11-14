@@ -51,7 +51,6 @@
             text-align: center;
         }
 
-        /* Illustrazione / Emblema Basilica di San Francesco d'Assisi */
         .assisi-banner {
             position: relative;
             width: 100%;
@@ -484,11 +483,9 @@
 </head>
 <body>
 
-    <!-- SCHERMATA DI ACCESSO RISERVATO CON BASILICA DI SAN FRANCESCO D'ASSISI -->
+    <!-- SCHERMATA DI ACCESSO RISERVATO -->
     <div id="login-screen">
         <div class="login-card">
-            
-            <!-- Banner Illustrato della Basilica di San Francesco d'Assisi -->
             <div class="assisi-banner" title="Basilica di San Francesco d'Assisi">
                 <svg viewBox="0 0 400 170" xmlns="http://www.w3.org/2000/svg">
                     <defs>
@@ -504,15 +501,10 @@
                             <stop offset="100%" stop-color="#78350f"/>
                         </linearGradient>
                     </defs>
-                    <!-- Cielo tramonto umbro -->
                     <rect width="400" height="170" fill="url(#skyGrad)"/>
-                    <!-- Colline di Assisi sullo sfondo -->
                     <path d="M0 128 Q90 98 180 122 T400 112 L400 170 L0 170 Z" fill="#1e293b" opacity="0.65"/>
                     <path d="M0 140 Q130 115 260 136 T400 126 L400 170 L0 170 Z" fill="#0f172a" opacity="0.85"/>
-                    
-                    <!-- Mura e contrafforti del Sacro Convento -->
                     <rect x="65" y="112" width="270" height="45" fill="#451a03" opacity="0.9"/>
-                    <!-- Archi del loggiato -->
                     <g fill="#171c28">
                         <path d="M80 142 V126 A6 6 0 0 1 92 126 V142 Z"/>
                         <path d="M102 142 V126 A6 6 0 0 1 114 126 V142 Z"/>
@@ -521,37 +513,25 @@
                         <path d="M286 142 V126 A6 6 0 0 1 298 126 V142 Z"/>
                         <path d="M308 142 V126 A6 6 0 0 1 320 126 V142 Z"/>
                     </g>
-
-                    <!-- Campanile romanico della Basilica -->
                     <rect x="122" y="26" width="26" height="92" fill="url(#stoneGrad)" stroke="#451a03" stroke-width="1.2"/>
                     <rect x="119" y="23" width="32" height="5" fill="#92400e"/>
                     <rect x="120" y="52" width="30" height="3" fill="#78350f"/>
                     <rect x="120" y="80" width="30" height="3" fill="#78350f"/>
-                    <!-- Bifore campanile -->
                     <rect x="127" y="32" width="6" height="14" rx="3" fill="#1e1b4b"/>
                     <rect x="137" y="32" width="6" height="14" rx="3" fill="#1e1b4b"/>
                     <rect x="127" y="60" width="6" height="14" rx="3" fill="#1e1b4b"/>
                     <rect x="137" y="60" width="6" height="14" rx="3" fill="#1e1b4b"/>
-
-                    <!-- Facciata a capanna della Basilica Superiore -->
                     <polygon points="154,66 200,32 246,66 246,125 154,125" fill="url(#stoneGrad)" stroke="#451a03" stroke-width="1.4"/>
-                    <!-- Cornice marcapiano -->
                     <line x1="154" y1="68" x2="246" y2="68" stroke="#78350f" stroke-width="2.5"/>
                     <line x1="154" y1="96" x2="246" y2="96" stroke="#78350f" stroke-width="2"/>
-                    
-                    <!-- Grande Rosone centrale -->
                     <circle cx="200" cy="82" r="11" fill="#1e1b4b" stroke="#fef3c7" stroke-width="1.8"/>
                     <circle cx="200" cy="82" r="4" fill="#f59e0b"/>
                     <line x1="200" y1="71" x2="200" y2="93" stroke="#fef3c7" stroke-width="1"/>
                     <line x1="189" y1="82" x2="211" y2="82" stroke="#fef3c7" stroke-width="1"/>
                     <line x1="192" y1="74" x2="208" y2="90" stroke="#fef3c7" stroke-width="1"/>
                     <line x1="208" y1="74" x2="192" y2="90" stroke="#fef3c7" stroke-width="1"/>
-
-                    <!-- Portale gotico binato -->
                     <path d="M188 125 V108 A12 12 0 0 1 212 108 V125 Z" fill="#451a03" stroke="#fef3c7" stroke-width="1.2"/>
                     <line x1="200" y1="106" x2="200" y2="125" stroke="#fef3c7" stroke-width="1.2"/>
-
-                    <!-- Prato / Piazza Inferiore -->
                     <rect x="0" y="145" width="400" height="25" fill="#171c28" opacity="0.8"/>
                 </svg>
                 <div class="assisi-badge">Basilica di San Francesco d'Assisi</div>
@@ -581,21 +561,16 @@
         </div>
     </div>
 
-    <!-- CONTENUTO PRINCIPALE DELL'APP (NASCOSTO FINO AL LOGIN) -->
+    <!-- CONTENUTO PRINCIPALE -->
     <div id="app-wrapper" class="hidden">
         <header>
-            <!-- Icona Basilica di San Francesco d'Assisi -->
             <div class="header-icon" title="Basilica di San Francesco d'Assisi">
                 <svg viewBox="0 0 36 36" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Campanile -->
                     <rect x="6" y="7" width="6" height="22" fill="#ffffff" rx="0.5"/>
                     <rect x="8" y="10" width="2" height="3" fill="#dc2743"/>
                     <rect x="8" y="16" width="2" height="3" fill="#dc2743"/>
-                    <!-- Facciata Basilica -->
                     <polygon points="13,15 21.5,8 30,15 30,29 13,29" fill="#ffffff"/>
-                    <!-- Rosone -->
                     <circle cx="21.5" cy="17.5" r="2.6" fill="#dc2743"/>
-                    <!-- Portale -->
                     <path d="M19 29 V23.5 A2.5 2.5 0 0 1 24 23.5 V29 Z" fill="#dc2743"/>
                 </svg>
             </div>
@@ -618,7 +593,6 @@
             <!-- SEZIONE NUOVA REGISTRAZIONE -->
             <div id="section-new" class="card">
                 <form id="diarioForm">
-                    
                     <div class="form-group">
                         <label for="data">
                             <svg viewBox="0 0 24 24"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11z"/></svg>
@@ -780,7 +754,6 @@
     </div>
 
     <script>
-        // --- GESTIONE AUTENTICAZIONE (PASSWORD "luca" E IMPRONTA DIGITALE WEBAUTHN) ---
         function sbloccaApp() {
             document.getElementById('login-screen').classList.add('hidden');
             document.getElementById('app-wrapper').classList.remove('hidden');
@@ -887,11 +860,10 @@
                     }
                 }
             } catch (e) {
-                errBox.innerText = 'Impronta non disponibile in questa modalità o annullata. Usa la password.';
+                errBox.innerText = 'Impronta non disponibile o annullata. Usa la password.';
             }
         }
 
-        // --- LOGICA APPLICAZIONE ---
         document.getElementById('data').valueAsDate = new Date();
         let editingIndex = null;
 
@@ -1051,7 +1023,6 @@
             document.getElementById('note').value = item.note === 'Nessuna' ? '' : item.note;
 
             editingIndex = index;
-
             switchTab('new');
         }
 
